@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "source_repository": "https://github.com/ultimetamr/RoomSiege",
+  "source_commit": "f3640c87e0cdda76a4fe822a73843da8c34e320d",
+  "unity_version": "6000.6.8f1",
+  "unity_configuration": "Release",
+  "gradle_version": "8.11.1",
+  "android_gradle_plugin": "8.10.1",
+  "application_id": "com.roomsiege.mr",
+  "unity_export_apk_sha256": "97597d76c4d5ae7acd5aeed4714b7a15023145ad10d3ec512b0ce77dd9b659de",
+  "critical_files": [
+    {
+      "path": "unityLibrary/src/main/jniLibs/arm64-v8a/lib_burst_generated.so",
+      "sha256": "a837b00b1a0cdf4ca912ab3cfefb7587fe772796db04f4b09b3e3e2ac60cc17f"
+    },
+    {
+      "path": "unityLibrary/src/main/jniLibs/arm64-v8a/libil2cpp.so",
+      "sha256": "27bfaa053e08db33bfb18b516599dd8b9e3e5cc38db0d496fe932fb89ee4bfa8"
+    },
+    {
+      "path": "unityLibrary/src/main/jniLibs/arm64-v8a/libmain.so",
+      "sha256": "ecdd925d76c840d319b32cafa2f466d226c69259ca63a0f2414004e5d835a433"
+    },
+    {
+      "path": "unityLibrary/src/main/jniLibs/arm64-v8a/libPicoAmbisonicDecoder.so",
+      "sha256": "a90306834e8200e419b8786944b112129e2193b302544bc8b2ea6df340dcb8d4"
+    },
+    {
+      "path": "unityLibrary/src/main/jniLibs/arm64-v8a/libPicoAudioRouter.so",
+      "sha256": "8815989163d1b09f78c575eea7b8e0646d13ec4a81fa36ba6d565907b5153869"
+    },
+    {
+      "path": "unityLibrary/src/main/jniLibs/arm64-v8a/libPicoAudioSDKUnityNativePlugin.so",
+      "sha256": "347d5f94c94774e181ab1649257c36e2169c6e786342da6a3041bd3e16172449"
+    },
+    {
+      "path": "unityLibrary/src/main/jniLibs/arm64-v8a/libPicoSpatializer.so",
+      "sha256": "660d2fe0505d0cb714867ec23122dbbfbd21153e1d7c38816a101193fe1c66a2"
+    },
+    {
+      "path": "unityLibrary/src/main/jniLibs/arm64-v8a/libunity.so",
+      "sha256": "b4fb43cb596651fd0eff99171ea0711d7c2cfd32f8b4368147f63f54743ddf60"
+    },
+    {
+      "path": "unityLibrary/src/main/jniLibs/arm64-v8a/libUnityOpenXR.so",
+      "sha256": "d10e5d6ad2fd9ca6c686d23e7faa7512d88d6dfdf8e26502dcab617f3a377e51"
+    },
+    {
+      "path": "unityLibrary/src/main/assets/bin/Data/Managed/Metadata/global-metadata.dat",
+      "sha256": "cd7f11dbacb2842085b217a4b34fe5c61ac2706d74b41100a9559e86198c5f0b"
+    },
+    {
+      "path": "launcher/src/main/res/mipmap-mdpi/app_icon.png",
+      "sha256": "37afeec0d74c03c00ea53bd30bfe5262f065ceb2cde6926fcd3ee8f4ca040e4e"
+    }
+  ],
+  "submission_tooling_commit": "f99a07131a63330eabd99941dd0f0f5c4b3dd56f"
+}

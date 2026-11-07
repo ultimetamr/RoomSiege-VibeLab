@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-07",
+  "gradle": "8.11.1",
+  "agp": "8.10.1",
+  "java": "17",
+  "command": "gradle --no-daemon --console=plain assembleRelease",
+  "result": "BUILD SUCCESSFUL",
+  "application_id": "com.roomsiege.mr",
+  "version_name": "0.1.0",
+  "version_code": 1,
+  "android_debuggable": false,
+  "unity_configuration": "Release",
+  "abi": [
+    "arm64-v8a"
+  ],
+  "apk_sha256": "fdb441ca2696782a2bd144134fa6635bde3119642973c686e1ab167b49258e41",
+  "apk_bytes": 67213878,
+  "signature_v2_verified": true,
+  "zipalign_4_verified": true,
+  "custom_icon_verified": true,
+  "critical_runtime_hashes_verified": 11,
+  "native_libraries": [
+    "lib/arm64-v8a/libCameraRenderingPlugin.so",
+    "lib/arm64-v8a/libPICO_TOBAPI.so",
+    "lib/arm64-v8a/libPicoAmbisonicDecoder.so",
+    "lib/arm64-v8a/libPicoAudioRouter.so",
+    "lib/arm64-v8a/libPicoAudioSDKUnityNativePlugin.so",
+    "lib/arm64-v8a/libPicoSpatializer.so",
+    "lib/arm64-v8a/libPxrPlatform.so",
+    "lib/arm64-v8a/libUnityOpenXR.so",
+    "lib/arm64-v8a/lib_burst_generated.so",
+    "lib/arm64-v8a/libil2cpp.so",
+    "lib/arm64-v8a/libmain.so",
+    "lib/arm64-v8a/libopenxr_loader.so",
+    "lib/arm64-v8a/libpvrcapturelib.so",
+    "lib/arm64-v8a/libpxrplatformloader.so",
+    "lib/arm64-v8a/libpxrplatformloader4j.so",
+    "lib/arm64-v8a/libtobservice.so",
+    "lib/arm64-v8a/libunity.so"
+  ],
+  "compiled_scene_present": true,
+  "cloud_job_run": false,
+  "new_device_playtest": false,
+  "notes": [
+    "Existing PICO audio runtime 16KB ELF alignment warnings are not fixed by this packaging change."
+  ]
+}

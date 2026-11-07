@@ -1,0 +1,29 @@
+plugins {
+    id 'com.android.application' version '8.10.1' apply false
+    id 'com.android.library' version '8.10.1' apply false
+}
+
+// Fail clearly if a checkout is missing genuine Unity runtime inputs.
+tasks.register('verifyUnityRuntime') {
+    doLast {
+        def provenance = new groovy.json.JsonSlurper().parse(file('build-provenance.json'))
+        provenance.critical_files.each { entry ->
+            def input = file(entry.path)
+            if (!input.isFile()) throw new GradleException("Missing Unity runtime: ${entry.path}")
+            def digest = java.security.MessageDigest.getInstance('SHA-256')
+            input.withInputStream { stream ->
+                byte[] buffer = new byte[65536]
+                int count
+                while ((count = stream.read(buffer)) != -1) digest.update(buffer, 0, count)
+            }
+            if (digest.digest().encodeHex().toString() != entry.sha256)
+                throw new GradleException("Unity runtime checksum mismatch: ${entry.path}")
+        }
+    }
+}
+subprojects {
+    tasks.matching { it.name == 'preBuild' }.configureEach {
+        dependsOn rootProject.tasks.named('verifyUnityRuntime')
+    }
+}
+tasks.register('clean', Delete) { delete rootProject.layout.buildDirectory }
